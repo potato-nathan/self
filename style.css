@@ -203,10 +203,47 @@ h3{
     padding: 50px;
 }
 
-.campus-col{
+.another-col{
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
+}
+
+.another-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    transition: 0.25s;
+}
+
+.layer:hover{
+    background: #ffd5f7CC; 
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
 }
